@@ -86,6 +86,7 @@
       border-radius:28px;
       transition:transform .35s ease,filter .35s ease;
       outline:none;
+      text-align:center;
     }
     .pillar::before{content:"";position:absolute;inset:12% 10% 5%;border-radius:30px;background:radial-gradient(circle at 50% 76%,color-mix(in srgb,var(--accent) 27%,transparent),transparent 55%);opacity:.8;filter:blur(14px);transition:.35s ease;z-index:-1}
     .pillar::after{content:"";position:absolute;left:18%;right:18%;bottom:10px;height:3px;border-radius:999px;background:var(--accent);box-shadow:0 0 14px var(--accent),0 0 36px var(--accent);opacity:.75}
@@ -142,9 +143,12 @@
     .contact-link:hover,.contact-link:focus-visible{transform:translateY(-2px);background:rgba(25,185,255,.12);box-shadow:0 0 24px rgba(25,185,255,.14)}
     .contact-link span{color:var(--cyan);font-size:1.25rem}
 
-    footer{padding:54px 24px 28px;background:#020a19;border-top:1px solid rgba(255,255,255,.07);text-align:center}
+    .site-footer{padding:54px 24px 28px;background:#020a19;border-top:1px solid rgba(255,255,255,.07);text-align:center}
     .footer-logo{width:min(250px,65vw);height:auto;margin-bottom:14px}
-    .footer-motto{font-size:1.05rem;letter-spacing:.08em;color:#edf5ff;margin:0 0 22px}
+    .footer-motto{font-size:1.05rem;letter-spacing:.08em;margin:0 0 22px;font-weight:700}
+    .footer-motto .motto-365{color:var(--green)}
+    .footer-motto .motto-ict{color:var(--cyan)}
+    .footer-motto .motto-dev{color:var(--violet)}
     .footer-meta{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 14px;color:#aebdd3;font-size:.95rem}
     .footer-meta a:hover,.footer-meta a:focus-visible{color:#fff}
     .footer-bottom{margin-top:24px;padding-top:22px;border-top:1px solid rgba(255,255,255,.06);display:flex;justify-content:center;gap:10px 16px;flex-wrap:wrap;color:#7f91aa;font-size:.84rem}
@@ -178,7 +182,7 @@
       .section-inner{grid-template-columns:1fr;gap:32px}
       .section{padding:76px 22px}
       .contact-cta{padding:82px 20px 66px}
-      footer{padding-left:20px;padding-right:20px}
+      .site-footer{padding-left:20px;padding-right:20px}
     }
     @media (max-width: 560px){
       .hero{padding-left:18px;padding-right:18px}
@@ -274,15 +278,15 @@
 
     <section class="contact-cta" id="kontakt">
       <div class="inner">
-        <h4>Máte projekt, nápad nebo hledáte partnera pro své ICT?</h4>
-        <p>Pojďme ho společně probrat.</p>
+        <h4>Máte myšlenku, nápad nebo představu?</h4>
+        <p>Společně najdeme cestu, jak ji proměnit v řešení.</p>
         <a class="contact-link" href="mailto:info@adixcloud.cz">Napište nám <span>→</span></a>
       </div>
     </section>
 
-    <footer>
+    <footer class="site-footer">
       <img class="footer-logo" src="assets/adix-cloud-logo.svg" alt="ADIX Cloud" />
-      <p class="footer-motto">Technologie. Lidé. Smysl.</p>
+      <p class="footer-motto"><span class="motto-365">Technologie.</span> <span class="motto-ict">Lidé.</span> <span class="motto-dev">Smysl.</span></p>
       <div class="footer-meta">
         <span>ADIX Cloud s.r.o.</span><span>•</span>
         <a href="https://adixcloud.cz/">adixcloud.cz</a><span>•</span>
