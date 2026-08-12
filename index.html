@@ -115,7 +115,7 @@
 
     .section{min-height:90svh;padding:100px 24px;display:flex;justify-content:center;align-items:center;border-top:1px solid rgba(255,255,255,.06)}
     .section-inner{width:min(1180px,calc(100% - 48px));margin-left:auto;margin-right:auto;display:grid;grid-template-columns:1.1fr .9fr;gap:28px 64px;align-items:center}
-    .eyebrow{grid-column:1 / -1;width:100%;text-align:center;font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.85rem;margin:0}
+    .eyebrow{grid-column:1 / -1;width:100%;text-align:left;font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.85rem;margin:0}
     .section h3{font-size:clamp(2.2rem,4vw,4.8rem);line-height:1.02;margin:0 0 18px;letter-spacing:-.04em}
     .section p{font-size:1.12rem;line-height:1.75;color:#cbd7ea;max-width:720px}
     .visual{aspect-ratio:4/3;border:1px solid rgba(255,255,255,.12);border-radius:32px;background:radial-gradient(circle at 50% 50%,rgba(255,255,255,.08),transparent 58%),linear-gradient(145deg,rgba(255,255,255,.035),rgba(255,255,255,.01));display:grid;place-items:center;font-size:clamp(2rem,6vw,5rem);font-weight:800;color:rgba(255,255,255,.2);position:relative;overflow:hidden}
@@ -123,12 +123,13 @@
     @keyframes shine{40%,100%{transform:translateX(120%)}}
     #solutions{background:linear-gradient(180deg,#04152f,#06182c)}
     #managed{background:linear-gradient(180deg,#06182c,#04162f)}
-    #dev{background:linear-gradient(180deg,#04162f,#0b1231)}
+    #dev{background:linear-gradient(180deg,#04162f,#0b1231);padding-bottom:150px}
     #solutions .eyebrow,#solutions h3{color:var(--green)}
     #managed .eyebrow,#managed h3{color:var(--cyan)}
     #dev .eyebrow,#dev h3{color:var(--violet)}
 
     .contact-cta{
+      margin-top:72px;
       padding:110px 24px 84px;
       text-align:center;
       border-top:1px solid rgba(255,255,255,.06);
@@ -181,7 +182,8 @@
       .pillar p{min-height:0}
       .section-inner{width:100%;grid-template-columns:1fr;gap:32px}
       .section{padding:76px 22px}
-      .contact-cta{padding:82px 20px 66px}
+      #dev{padding-bottom:100px}
+      .contact-cta{margin-top:44px;padding:82px 20px 66px}
       .site-footer{padding-left:20px;padding-right:20px}
     }
     @media (max-width: 560px){
